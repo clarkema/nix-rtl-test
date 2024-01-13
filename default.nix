@@ -8,6 +8,6 @@ pkgs.stdenv.mkDerivation {
 
   postInstall = ''
     mkdir -p $out/etc/udev/rules.d
-    cp dist/nix/99-rtl-sdr.rules $out/etc/udev/rules.d/99-rtl-sdr.rules
+    cp dist/nix/99-rtl-sdr.rules $out/etc/udev/rules.d/10-rtl-sdr.rules
   '';
 }
